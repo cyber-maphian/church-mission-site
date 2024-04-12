@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap-5/css/bootstrap.min.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='svg/gem.svg')}}" type="image/x-icon">
+    <title>Gospel explosion</title>
+    <style>
+        section{
+            padding: 70px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger " href="#"><p class="h3 fw-bold">Gospel explosion mission</p> </a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{{url_for('index')}}"><p class="h3">Home</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('event')}}"><p class="h3">Event</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('media')}}"><p class="h3">Media</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('about')}}"><p class="h3">About</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('gallery')}}"><p class="h3">Gallery</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="{{url_for('field')}}"><p class="h3">MissionField</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('contact')}}"><p class="h3">Contact</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark btn btn-danger p-2 " href="{{url_for('give')}}"><p class="h3 lead fw-bold">Give online</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--end of header -->
+
+      <!--field section-->
+      <section id="top" class="">
+        <div class="container">
+          <h1 class="mb-5 fw-bold">Mission Field In Lokoja, Kogi State</h1>
+            <div class="row">
+              <!--first col-->
+              <div class="col shadow-lg p-3 mb-5 bg-body rounded">
+                    <h1>Ohono Mission Field</h1>
+              </div>
+
+              <!--second col-->
+              <div class="col shadow-lg p-3 mb-5 bg-body rounded"">
+                    <h1>Karara Mission Field</h1>
+              </div>
+
+              <!--third col-->
+              <div class="col shadow-lg p-3 mb-5 bg-body rounded"">
+                    <h1>Felele Mission Field</h1>
+              </div>
+            </div>
+            
+            <div class="container">
+                <h1 class="">Visit Our Social Media Plateforms</h1>
+                <a href="https://www.facebook.com/profile.php?id=100091985783072" target="_blank"><i><img src="{{url_for('static',filename='svg/facebook.svg')}}" alt="" style="width: 50px;"></i></a>
+                <a href="https://chat.whatsapp.com/CztY6knni03BzmjfSkfwln" target="_blank"><i><img src="{{url_for('static',filename='svg/whatsapp.svg')}}" alt="" style="width: 50px;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100091985783072" target="_blank"><i><img src="{{url_for('static',filename='svg/messenger.svg')}}" alt="" style="width: 50px;"></i></a>
+                <a href=""><i><img src="{{url_for('static',filename='svg/envelope.svg')}}" alt="" style="width: 50px;"></i></a>
+                <a href="Tel:08077642089" target="_blank"><i><img src="{{url_for('static',filename='svg/telephone-inbound-fill.svg')}}" alt="" style="width: 50px;"></i></a>
+            </div>
+        </div>
+
+        
+      </section>
+      <!--end mission field section-->
+
+      <!--footer section-->
+     <section id="" class="" style="background-color: black;">
+        <div class="container text-center">
+            <p class="text-secondary">Gospel explosion mission &copy; copyright2024</p>
+            <p class="text-secondary">developed by <a href="https://gsometechnology.onrender.com/" target="_blank">G-some Technology</a></p>
+            <p class="text-secondary">lekandammy1@gmail.com</p>
+            <a class="btn btn-light text-danger" href="#top" id="top"><i class="bi bi-arrow-clockwise"><img src="{{url_for('static', filename='svg/top.svg')}}" alt=""></i></a>
+        </div>
+    </section>
+    <!--footer section-->
+
+    <script type="text/javascript" src="{{url_for('static', filename='bootstrap-5/js/bootstrap.min.js')}}"></script>
+</body>
+</html>

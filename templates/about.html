@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap-5/css/bootstrap.min.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='svg/gem.svg')}}" type="image/x-icon">
+    <title>Gospel explosion</title>
+
+    <style>
+        section{
+            padding: 60px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger " href="#"><p class="h3 fw-bold">Gospel explosion mission</p> </a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{{url_for('index')}}"><p class="h3">Home</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('event')}}"><p class="h3">Event</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('media')}}"><p class="h3">Media</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="{{url_for('about')}}"><p class="h3">About</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('gallery')}}"><p class="h3">Gallery</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('field')}}"><p class="h3">MissionField</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('contact')}}"><p class="h3">Contact</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark btn btn-danger p-2 " href="{{url_for('give')}}"><p class="h3 lead fw-bold">Give online</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--end of header -->
+
+       <!--second section-->
+    <section id="top" class="" style="background-color: rgb(250, 255, 255);">
+        <div class="container">
+            <div class="row">
+                <!--first column-->
+                <div class="col-lg-6 col-md-12">
+                    <div>
+                        <h2 class="fw-bold text-danger">About<br><span class="h1 fw-bold text-dark">Gospel explosion mission</span></h2>
+                        <p class="mb-3 lead">We're God's children and ambassadors in different spheres of influence. We are burdened with the heartbeat of God, especially to see the lost restored unto God. We have strange passion to preach the gospel of Jesus Christ to the unreached people of all nations. We prioritize the assignment of preaching the good news, which is the message of God's love above all forms of personal and collective responsibilities as we passionately burn with the burden of Christ.</p>
+                        <p class="lead">We hold a special connection to God, like children entrusted with important roles in different areas of life. We deeply feel God's desire for all people to find their way back to Him, especially those who haven't yet encountered His love.</p>
+                    </div>
+                </div>
+
+                <!--second column-->
+                <div class="col">
+                    <img src="{{url_for('static',filename='svg/bag9.jpg')}}" class="img-fluid " alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end second section-->
+
+    <!--mision and vision section-->
+    <section id="" class="" style="background-color: rgb(250, 255, 255);">
+        <div class="container">
+            <div class="row">
+                <!--first column-->
+                <div class="col-lg-6 col-md-12">
+                    <div>
+                        <h2 class="fw-bold text-danger">Our Mission<br><span class="h1 fw-bold text-dark">Gospel explosion mission</span></h2>
+                        <p class="lead">-To explode the gospel of jesus christ to all nations</p>
+                        <p class="lead">-To raise believers who are God minded and mission conscious</p>
+                        <p class="lead">-To help the needy through their academics and vocations, support missionaries, care for widows and victims of disasters.</p>
+                        <!--the mission is aimed at-->
+                        <h2 class="fw-bold text-danger">The Mission is aimed at:</h2>
+                        <p class="lead">-Exploding the gospel, there by saving many from eternal damnation.</p>
+                        <p class="lead">-Preparing the church for the glorious appearing of christ return</p>
+                        <p class="lead">-Making disciples who would propagate the gospel among all nations</p>
+                        
+
+                    </div>
+                </div>
+
+                <!--second column-->
+                <div class="col">
+                    <div>
+                        <h2 class="fw-bold text-danger">Our Vision<br><span class="h1 fw-bold text-dark">Gospel explosion mission</span></h2>
+                        <p class="mb-3 lead">To take the gospel of jesus christ to the unreached of all races across the world - mark 16:15</p>
+                        <h2 class="fw-bold text-danger">Activities</h2>
+                        <p class="lead">-Evangelism through divers strategies</p>
+                        <p class="lead">-Disciple trainings</p>
+                        <p class="lead">-Conferences of all kinds</p>
+                        <p class="lead">-Helping the needy</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end mision and vision section section-->
+
+     <!--about man of God section-->
+     <section id="top" class="" style="background-color: rgb(250, 255, 255);">
+        <div class="container">
+            <div class="row">
+                <!--first column-->
+                <div class="col-lg-6 col-md-12">
+                    <img src="{{url_for('static',filename='svg/pastor.jpg')}}" class="img-fluid " alt="" style="height: 80%; width: 90%;">
+                </div>
+                <!--second column-->
+                
+                <div class="col">
+                    <div>
+                        <h2 class="fw-bold text-danger">Evangelist<br><span class="h1 fw-bold text-dark">Olamilekan Busayo</span></h2>
+                        <p class="mb-3 lead">A devoted evangelist who is dedicated and committed to spreading the message of truth and salvation across nations and diverse cultures. He is a contemporary evangelist and also a dynamic spiritual leader whose life's mission revolves around sharing the gospel and fostering spiritual growth.</p>
+                        <p class="lead">Evangelist Busayo is also armed with theological education (Dunamis School Of Ministry) and a fervent spirit. His impact is evident in the transformed lives of individuals who credit his ministry for guiding them in their spiritual journeys. He is committed to community outreaches, humanitarian efforts and fostering inclusivity within the church has solidified a legacy that extends beyond the pulpit, he stands a living testament to the enduring relevance of evangelism in the contemporary world.</p>
+                        <p class="lead">In conclusion Evangelist Olamilekan Busayo is happily married to Damilola Ruth and they are both blessed with a daughter.He is a beacon of inspiration for those seeking spiritual guidance as he continues to shape lives through his ministry.</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--end about man of God section-->
+
+     <!--footer section-->
+     <section id="" class="" style="background-color: black;">
+        <div class="container text-center">
+            <p class="text-secondary">Gospel explosion mission &copy; copyright2024</p>
+            <p class="text-secondary">developed by <a href="https://gsometechnology.onrender.com/" target="_blank">G-some Technology</a></p>
+            <p class="text-secondary">lekandammy1@gmail.com</p>
+            <a class="btn btn-light text-danger" href="#top" id="top"><i class="bi bi-arrow-clockwise"><img src="{{url_for('static', filename='svg/top.svg')}}" alt=""></i></a>
+        </div>
+    </section>
+    <!--footer section-->
+
+    <script type="text/javascript" src="{{url_for('static', filename='bootstrap-5/js/bootstrap.min.js')}}"></script>
+</body>
+</html>

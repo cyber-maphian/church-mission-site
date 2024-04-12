@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap-5/css/bootstrap.min.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='svg/gem.svg')}}" type="image/x-icon">
+    <title>Gospel explosion</title>
+    <style>
+        section{
+            padding: 60px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger " href="#"><p class="h3 fw-bold">Gospel explosion mission</p> </a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="{{url_for('index')}}"><p class="h3">Home</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="{{url_for('event')}}"><p class="h3">Event</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('media')}}"><p class="h3">Media</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('about')}}"><p class="h3">About</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('gallery')}}"><p class="h3">Gallery</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('field')}}"><p class="h3">MissionField</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-light" href="{{url_for('contact')}}"><p class="h3">Contact</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark btn btn-danger p-2 " href="{{url_for('give')}}"><p class="h3 lead fw-bold">Give online</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--end of header -->
+
+      <!--table section-->
+      <section id="top">
+            <div class="container">
+                <h1 class="p-5 h2 text-center text-dark fw-bold">Gospel Explosion Mission </h1>
+                <div class="container container shadow-lg p-3 mb-5 bg-body rounded">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Event</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Akungba Gospel Crusade</td>
+                            <td>Crusade</td>
+                            <td>January 24-26</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Kungbani Prayer Conference</td>
+                            <td>Conference</td>
+                            <td>January 28-31</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Agatu's Believers Conference</td>
+                            <td>Conference</td>
+                            <td>February 11-13</td>
+                          </tr>
+                          
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Oke-Ibukun Gospel Explosion</td>
+                            <td>Gospel Explosion</td>
+                            <td>February 25-27</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Atsawa Gospel Explosion</td>
+                            <td>Gospel Explosion</td>
+                            <td>March 17-19</td>
+                          </tr>
+
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Itobe Gospel Explosion</td>
+                            <td>Gospel Explosion</td>
+                            <td>March 24-27</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <!--image section-->
+                <div>
+                    <h1 class="p-5 h2 text-center text-dark fw-bold">Lattest Event </h1>
+                    <img src="{{url_for('static',filename='svg/pastor20.jpg')}}" class="img-fluid rounded mx-auto d-block" alt="" style="width: 60%;">
+                </div>
+            </div>
+      </section>
+      <!--end table section-->
+
+      <!--footer section-->
+    <section id="" class="" style="background-color: black;">
+        <div class="container text-center">
+            <p class="text-secondary">Gospel explosion mission &copy; copyright2024</p>
+            <p class="text-secondary">developed by <a href="https://gsometechnology.onrender.com/" target="_blank">G-some Technology</a></p>
+            <p class="text-secondary">lekandammy1@gmail.com</p>
+            <a class="btn btn-light text-danger" href="#top" id="top"><i class="bi bi-arrow-clockwise"><img src="{{url_for('static', filename='svg/top.svg')}}" alt=""></i></a>
+        </div>
+    </section>
+    <script type="text/javascript" src="{{url_for('static', filename='bootstrap-5/js/bootstrap.min.js')}}"></script>
+</body>
+</html>
